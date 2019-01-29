@@ -4,6 +4,13 @@
     color: #777777;
 
 }
+
+body{
+    /* Need to add the background of the body so that it shows in the background */
+    background-color: #dddddd;
+
+}
+
 header{
     background: #ffffff;
     /* display: inline */
@@ -97,10 +104,17 @@ h2{
 .AboutBox{
     
     background: #ffffff;
-    border: 100px solid #dddddd;
+    /* border: 100px solid #dddddd; */
     padding: 1%;
+    /* Instead of doing the border around it need to specify the area */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     /* Add for flare later */
     /* border-radius: 100px; */
+    clear: both;
     
 
 }
@@ -150,9 +164,10 @@ h2{
 footer{
     
     /* Can't figure out how to get the padding for he top to come up?*/
-    border-top: 25px #4aaaa5;
+    border-top: 25px solid #4aaaa5;
     background-color: #666666;
     padding: 20px;
+    /* height: 20% */
    
 }
 h5{
@@ -215,9 +230,13 @@ h5{
     /* clear: both; */
   }
 
+  /* Issues with having a float as it does not stay in the container of the .about */
   #box-set1,
   #box-set2{
-      float: left
+    position: relative;  
+    float: left;
+    overflow: auto;
+      
   }
 
   .box-1.1{
