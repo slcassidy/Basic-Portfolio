@@ -65,7 +65,7 @@ header{
     /* display: inline */
     /* float: left; */
     top: 0;
-    right: 10%
+    right: 5%
 }
 
 ul{
@@ -81,6 +81,10 @@ li{
     padding: 16px;
     font: bold;
     /* font-size: 95%; */
+}
+
+li:hover{
+    background-color:#4aaaa5;
 }
 
 /* li a {
@@ -115,6 +119,8 @@ h2{
     /* Add for flare later */
     /* border-radius: 100px; */
     clear: both;
+    /* Checking to see if this will fix the issue so that it goes within the image box */
+    position: relative;
     
 
 }
@@ -210,43 +216,105 @@ h5{
 }
 
 #button{
-    type="button" onclick="alert('Hello world!')"
+    type ="button" onclick="alert('Hello world!')"
 }
    
 /* --------------------------------Profile Additions----------------------------------------------------------------- */
 
 
+/* Replaced the AboutMe with the below to so that it will not mess up other pages */
+.Port{
+    
+    background: #ffffff;
+    /* border: 100px solid #dddddd; */
+    /* padding: 1%; */
+    /* Instead of doing the border around it need to 
+    specify the area using the margin: 0 auto; centers the information */
+   
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /* Add for flare later */
+    /* border-radius: 100px; */
+    clear: both;
+    /* Checking to see if this will fix the issue so that it goes within the image box */
+    position: relative;
+        
+
+}
+
 
 .img-box {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 230px;
     background-color: white;
     border: 2px solid black;
+    /* clear: both; */
+    /* object-fit: cover;    */
+    /* margin: 30px 20px 20px auto; */
+    margin: 30px 20px auto;
+    
+  }
+
+  img{
+    width: 280px;
+    height: 230px;
+    object-fit: cover;
+    z-index: 4;  
   }
 
   .label-box {
     position: absolute;
-    width: 300px;
+    width: 280px;
     height: 50px;
     background: #4aaaa5;
     border: 2px solid black;
-    z-index: 4;
-    bottom: 300px;
+    margin: 30px 20px auto;
+    text-align: center;
+    text: bold;
+    color: white;
+    /* z-index: 4; */
+    /* bottom: 300px; */
     /* clear: both; */
   }
 
   /* Issues with having a float as it does not stay in the container of the .about */
-  .AboutBox
+
+  /* #box-set3, */
   #box-set1,
   #box-set2{
-    position: relative;  
+    /* position: relative;   */
     float: left;
-    overflow: auto;
+    /* overflow: auto; */
       
   }
 
-  .box-1.1{
-    bottom: 50px;
-    left: 70px;
+  .box-4-1,
+  .box-1-1{
+    /* bottom: 10px; */
+    /* left: 10px; */
+    top:225px;
     z-index: 3;
+  }
+
+  .box-5-1,
+  .box-2-1{
+    /* bottom: 10px; */
+    /* left: 10px; */
+    top:490px;
+    z-index: 3;
+  }
+
+
+  .box-3-1{
+    /* bottom: 10px; */
+    /* left: 10px; */
+    top:710px;
+    z-index: 3;
+  }  
+
+  .box-6{
+      display: none;
   }
