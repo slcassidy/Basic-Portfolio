@@ -85,6 +85,8 @@ li{
 
 li:hover{
     background-color:#4aaaa5;
+    font-weight: bold;
+    color: white;
 }
 
 /* li a {
@@ -232,6 +234,8 @@ h5{
     specify the area using the margin: 0 auto; centers the information */
    
     margin: 0 auto;
+    
+    /* Using the width at a 100 will then all to indicate the max of the width */
     width: 100%;
     max-width: 960px;
     margin-top: 10px;
@@ -283,6 +287,7 @@ h5{
   /* Issues with having a float as it does not stay in the container of the .about */
 
   /* #box-set3, */
+  /* .port, */
   #box-set1,
   #box-set2{
     /* position: relative;   */
