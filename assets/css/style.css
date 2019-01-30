@@ -164,10 +164,15 @@ h2{
 footer{
     
     /* Can't figure out how to get the padding for he top to come up?*/
-    border-top: 25px solid #4aaaa5;
+    border-top: 10px solid #4aaaa5;
     background-color: #666666;
-    padding: 20px;
-    /* height: 20% */
+    /* padding: 20px; */
+    /* Sticky Footer!! */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
    
 }
 h5{
@@ -231,6 +236,7 @@ h5{
   }
 
   /* Issues with having a float as it does not stay in the container of the .about */
+  .AboutBox
   #box-set1,
   #box-set2{
     position: relative;  
